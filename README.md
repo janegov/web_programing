@@ -13,8 +13,6 @@ A full-stack note-taking application built with React, .NET, and MySQL. The appl
 - Secure API endpoints
 - JWT-based authentication
 
-## Tech Stack
-
 ### Frontend
 - React
 - Material-UI
@@ -31,10 +29,10 @@ A full-stack note-taking application built with React, .NET, and MySQL. The appl
 
 ## Prerequisites
 
-- Node.js (v14 or higher)
-- .NET SDK (v6.0 or higher)
+- Node.js (v14)
+- .NET SDK (v8.0)
 - MySQL Server
-- npm or yarn
+- npm
 
 ## Installation
 
@@ -62,13 +60,6 @@ A full-stack note-taking application built with React, .NET, and MySQL. The appl
    cd NotesApi
    ```
 
-2. Update the connection string in `appsettings.json`:
-   ```json
-   "ConnectionStrings": {
-     "DefaultConnection": "Server=localhost;Port=3306;Database=notesdb;User=root;Password=your_password;"
-   }
-   ```
-
 3. Apply database migrations:
    ```bash
    dotnet ef database update
@@ -78,45 +69,6 @@ A full-stack note-taking application built with React, .NET, and MySQL. The appl
    ```bash
    dotnet run
    ```
-
-## Project Structure
-
-```
-note-app/
-├── src/
-│   ├── components/
-│   │   ├── Auth/
-│   │   │   ├── Login.jsx
-│   │   │   ├── Register.jsx
-│   │   │   └── Auth.css
-│   │   ├── Notes/
-│   │   │   ├── NotesList.jsx
-│   │   │   ├── NoteItem.jsx
-│   │   │   ├── NoteForm.jsx
-│   │   │   └── Notes.css
-│   │   └── Layout/
-│   │       ├── Navbar.jsx
-│   │       └── PrivateRoute.jsx
-│   ├── context/
-│   │   └── AuthProvider.jsx
-│   ├── services/
-│   │   ├── authService.js
-│   │   └── notesService.js
-│   ├── App.jsx
-│   └── main.jsx
-└── package.json
-
-NotesApi/
-├── Controllers/
-│   ├── AuthController.cs
-│   └── NotesController.cs
-├── Models/
-│   ├── Note.cs
-│   └── AuthModels.cs
-├── Data/
-│   └── ApplicationDbContext.cs
-└── Program.cs
-```
 
 ## API Endpoints
 
@@ -152,17 +104,6 @@ Update `appsettings.json` with your configuration:
 }
 ```
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
