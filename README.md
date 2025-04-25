@@ -1,5 +1,5 @@
 # web_programing
-# Note-Taking Application
+# Notes Manager 
 
 A full-stack note-taking application built with React, .NET, and MySQL. The application allows users to create, read, update, and delete notes with authentication and authorization features.
 
