@@ -103,11 +103,3 @@ Update `appsettings.json` with your configuration:
   }
 }
 ```
-
-
-## Acknowledgments
-
-- Material-UI for the UI components
-- React for the frontend framework
-- .NET Core for the backend framework
-- MySQL for the database
